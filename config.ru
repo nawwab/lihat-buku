@@ -1,3 +1,3 @@
-require './main'
+require_relative './config/environment.rb'
 
-run Application
+run ApplicationController

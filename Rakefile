@@ -1,2 +1,4 @@
 require 'sinatra/activerecord/rake'
-require './main'
+require_relative './config/environment.rb'
+
+run ApplicationController 

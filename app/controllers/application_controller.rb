@@ -1,7 +1,8 @@
 require 'sinatra'
+require 'sinatra/activerecord'
 
-class Application < Sinatra::Base
-  set :database, "sqlite3:lihat-buku.sqlite3"
+class ApplicationController < Sinatra::Base
+  register Sinatra::ActiveRecordExtension
 
   get '/' do
     'Hello world!'
